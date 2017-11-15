@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talkers > Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#talkers-intro">Talkers</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#equipo">Equipo</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#galeria">Galeria</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="contact.html">Contacto</a>
+            </li>
+            <li class="navbar-item">
+                <a href="server.html">Servidor</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="contact section-container">
+            <div class="row">
+                <div class="ini">
+                    <h1 class="slide">CONTACTO</h1>
+                    <span class="talkers-description">
+                    Solucionemos esto... ¡juntos!</span>
+                </div>
+                <div class="col-4">
+                        <section class="section-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Días</th> 
+                                        <th>Disp. horaria</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Laborables</td>
+                                        <td>10:00 a 22:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sábados</td>
+                                        <td>12:00 a 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Domingos</td>
+                                        <td>16:00 a 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Festivos</td>
+                                        <td>Labores de mantenimiento</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>    
+                </div>
+                <div class="col-8">
+                    <div class="form">
+                        <form name="contacto" method="get">
+                            <div class="form-row">
+                                <!--Nombre y apellido-->
+                                <label for="nombre">Nombre o apodo:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="P. ej.: Alberteiko" required>
+                            </div>
+                            <div class="form-row">
+                                <!--Correo electrónico-->
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" placeholder="tu@correo.dominio" 
+                                pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                            </div>
+                            <div class="form-row">
+                                <!--Teléfono-->
+                                <label for="telefono">Número de teléfono:</label>
+                                <input type="number" id="telefono" name="telefono" placeholder="+00 000 00 00 00">
+                            </div>
+                            <div class="form-row">
+                                <!--Opciones-->
+                                <div>Departamento</div>
+                                <label for="opcion_departamento_1">Soporte</label>
+                                <input type="radio" id="opcion_departamento_1" name="opcion_departamento" value="Soporte" required>
+
+                                <label for="opcion_departamento_2">Sanciones</label>
+                                <input type="radio" id="opcion_departamento_2" name="opcion_departamento" value="Sanciones" required>
+
+                                <label for="opcion_departamento_3">Otro</label>
+                                <input type="radio" id="opcion_departamento_3" name="opcion_departamento" value="Otros" required>
+                            </div>
+                            <div class="form-row">
+                                <!--Incidencia-->
+                                <label for="incidencia">Incidencia:</label>
+                                <input class="text" type="text" id="incidencia" name="incidencia" placeholder="Explícanos aquí tu problema" size="50" required>
+                            </div>
+                            <div class="form-row">
+                                <!--Fecha incidencia-->
+                                <label for="fecha">Fecha de la incidencia:</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" id="enviar">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Carlos Vallet García &copy 2017 Facultad BBAA - San Carlos
+    </footer>
+</body>
+</html>
